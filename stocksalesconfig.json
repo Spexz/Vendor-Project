@@ -9,6 +9,95 @@
     },
     "D614": [
         {
+            "type": "stock",
+            "sheet": 1,
+            "start_row": "8",
+            "end_row": {
+                "column" : "D"
+            },
+            "start_column": "A",
+            "end_column": "H",
+            "match": {
+                "type": "contains",
+                "param": "BÁO CÁO TỒN KHO",
+                "sheet": 1,
+                "range": "A3"
+            },
+            "rows_config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                },
+                "1": {
+                    "required": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "description": {
+                        "column": "B",
+                        "format": "text"
+                    },
+                    "unit": {
+                        "column": "C",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "D",
+                        "format": "number"
+                    }
+                },
+                "1" : {
+                    "brand": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "description": {
+                        "column": "B",
+                        "format": "text"
+                    },
+                    "unit": {
+                        "column": "C",
+                        "format": "text",
+                        "is blank": true
+                    },
+                    "stock amt total": {
+                        "column": "D",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D614"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "regex",
+                        "param": "[0-9]+\/[0-9]+\/[0-9]+",
+                        "match": "cell",
+                        "range": "A4"
+                    }
+                },
+                "brand": {
+                    "field": "1",
+                    "value": "brand"
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock am"
+                }
+            }
+        },
+        {
             "type": "sales",
             "sheet": 1,
             "start_row": "8",
