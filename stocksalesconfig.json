@@ -16,7 +16,7 @@
                 "column" : "D"
             },
             "start_column": "A",
-            "end_column": "H",
+            "end_column": "D",
             "match": {
                 "type": "contains",
                 "param": "BÁO CÁO TỒN KHO",
@@ -93,7 +93,7 @@
                 },
                 "stock": {
                     "field": "0",
-                    "value": "stock am"
+                    "value": "stock amt"
                 }
             }
         },
