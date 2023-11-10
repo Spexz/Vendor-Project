@@ -93,7 +93,8 @@
                 },
                 "stock": {
                     "field": "0",
-                    "value": "stock amt"
+                    "value": "stock amt",
+                    "if empty": 0
                 }
             }
         },
