@@ -233,13 +233,13 @@
                     "description blank": {
                         "column": "C",
                         "format": "text",
-                        "offset": -1,
+                        "offset": 1,
                         "is blank": true
                     },
-                    "stock amt blank": {
+                    "sale amt blank": {
                         "column": "D",
                         "format": "number",
-                        "offset": -1,
+                        "offset": 1,
                         "is blank": true
                     }
                 },
