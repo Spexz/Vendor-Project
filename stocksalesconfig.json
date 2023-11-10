@@ -160,18 +160,6 @@
                         "column": "D",
                         "format": "number",
                         "offset": -1
-                    },
-                    "description blank": {
-                        "column": "C",
-                        "format": "text",
-                        "offset": -1,
-                        "is blank": true
-                    },
-                    "stock amt blank": {
-                        "column": "D",
-                        "format": "number",
-                        "offset": -1,
-                        "is blank": true
                     }
                 }
             },
@@ -241,6 +229,18 @@
                     "sale amt": {
                         "column": "D",
                         "format": "number"
+                    },
+                    "description blank": {
+                        "column": "C",
+                        "format": "text",
+                        "offset": -1,
+                        "is blank": true
+                    },
+                    "stock amt blank": {
+                        "column": "D",
+                        "format": "number",
+                        "offset": -1,
+                        "is blank": true
                     }
                 },
                 "1": {
