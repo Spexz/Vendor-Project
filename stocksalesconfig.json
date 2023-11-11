@@ -5,6 +5,9 @@
         },
         "D557": {
             "combine": true
+        },
+        "D914": {
+            "combine": false
         }
     },
     "D614": [
