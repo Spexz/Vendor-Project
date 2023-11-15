@@ -543,7 +543,8 @@
                         "param": "\\d{2}-\\d{2}-\\d{2,4}",
                         "match": "cell",
                         "range": "B4"
-                    }
+                    },
+                    "date format": "dd-mm-yy"
                 },
                 "brand": {
                     "value": ""
