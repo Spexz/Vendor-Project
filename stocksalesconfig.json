@@ -112,7 +112,7 @@
                 "column" : "G"
             },
             "start_column": "A",
-            "end_column": "H",
+            "end_column": "G",
             "match": {
                 "type": "contains",
                 "param": "SỔ CHI TIẾT BÁN HÀNG",
