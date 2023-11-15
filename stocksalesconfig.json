@@ -130,24 +130,20 @@
             },
             "rows": {
                 "0" : {
-                    "description": {
+                    "brand": {
                         "column": "D",
                         "format": "text"
                     },
-                    "brand": {
+                    "part no": {
                         "column": "E",
                         "format": "text"
                     },
-                    "part no": {
-                        "column": "F",
-                        "format": "text"
-                    },
                     "sale amt": {
-                        "column": "G",
+                        "column": "F",
                         "format": "number"
                     },
                     "sale amt 2": {
-                        "column": "H",
+                        "column": "G",
                         "format": "number"
                     }
                 },
@@ -162,10 +158,6 @@
                     },
                     "some no": {
                         "column": "C",
-                        "format": "text"
-                    },
-                    "description": {
-                        "column": "D",
                         "format": "text"
                     }
                 }
