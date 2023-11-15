@@ -552,7 +552,7 @@
                     "field": "0",
                     "value": "part no"
                 },
-                "sales": {
+                "stock": {
                     "field": "0",
                     "value": "stock amt"
                 }
