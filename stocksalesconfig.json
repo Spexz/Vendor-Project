@@ -676,5 +676,64 @@
                 }
             }
         }
+    ],
+    "D833": [
+        {
+            "type": "sales",
+            "sheet": 1,
+            "start_column": "B",
+            "start_row": "3",
+            "used range": true,
+            "rows_config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                },
+                "1": {
+                    "required": false
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "2:2",
+                            "input": "Sale Date"
+                        },
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D833"
+                },
+                "date": {
+                    "value": "0",
+                    "lookup": {
+                        "type": "column",
+                        "param": "2:2",
+                        "match": "input",
+                        "input": "Sale Date"
+                    } 
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "sale amt"
+                }
+            }
+        }
     ]
 }
