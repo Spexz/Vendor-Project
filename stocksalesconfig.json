@@ -14,6 +14,9 @@
         },
         "D547": {
             "combine": true
+        },
+        "D491D1124": {
+            "combine": false
         }
     },
     "D614": [
@@ -604,6 +607,68 @@
                 "part": {
                     "field": "0",
                     "value": "part no"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                }
+            }
+        }
+    ],
+    "D491D1124": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start_row": "2",
+            "end_row": {
+                "column" : "C"
+            },
+            "start_column": "A",
+            "end_column": "C",
+            "rows_config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "B",
+                        "format": "number"
+                    },
+                    "sale amt": {
+                        "column": "C",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D491D1124"
+                },
+                "date": {
+                    "value": "0",
+                    "lookup": {
+                        "type": "regex",
+                        "param": "[a-zA-Z]{3} [0-9]{2,}",
+                        "match": "filename"
+                    } 
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
                 },
                 "sales": {
                     "field": "0",
