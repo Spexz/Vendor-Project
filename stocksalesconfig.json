@@ -439,7 +439,8 @@
                 },
                 "brand": {
                     "field": "0",
-                    "value": "brand"
+                    "value": "brand",
+                    "if empty": ""
                 },
                 "part": {
                     "field": "0",
