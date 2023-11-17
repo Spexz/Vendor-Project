@@ -20,6 +20,9 @@
         },
         "D833": {
             "combine": true
+        },
+        "D336": {
+            "combine": false
         }
     },
     "D614": [
@@ -782,6 +785,70 @@
                 "sales": {
                     "field": "0",
                     "value": "sale amt"
+                }
+            }
+        }
+    ],
+    "D336": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start_column": "A",
+            "start_row": "3",
+            "used range": true,
+            "rows_config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text",
+                        "replace": {
+                            "JS_": "",
+                            "JS ": "",
+                            "NIBK_": "",
+                            "NIBK ": "",
+                            "_": "",
+                            " ": ""
+                        }
+                    },
+                    "stock amt": {
+                        "column": "B",
+                        "format": "number"
+                    },
+                    "sale amt": {
+                        "column": "C",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D336"
+                },
+                "date": {
+                    "value": ""
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt",
+                    "if empty": 0
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt",
+                    "if empty": 0
                 }
             }
         }
