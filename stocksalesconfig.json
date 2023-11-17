@@ -682,6 +682,55 @@
     ],
     "D833": [
         {
+            "type": "stock",
+            "sheet": 2,
+            "start_column": "A",
+            "start_row": "4",
+            "used range": true,
+            "rows_config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "B",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D833"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "regex",
+                        "param": "\\d{2}\/\\d{2}\/\\d{2,4}",
+                        "match": "cell",
+                        "range": "A1"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
+                }
+            }
+        },
+        {
             "type": "sales",
             "sheet": 1,
             "start_column": "A",
@@ -731,55 +780,6 @@
                 "sales": {
                     "field": "0",
                     "value": "sale amt"
-                }
-            }
-        },
-        {
-            "type": "stock",
-            "sheet": 2,
-            "start_column": "A",
-            "start_row": "4",
-            "used range": true,
-            "rows_config": {
-                "0": {
-                    "required": true,
-                    "output": true
-                }
-            },
-            "rows": {
-                "0" : {
-                    "part no": {
-                        "column": "A",
-                        "format": "text"
-                    },
-                    "stock amt": {
-                        "column": "B",
-                        "format": "number"
-                    }
-                }
-            },
-            "output fields": {
-                "account_no": {
-                    "value": "D833"
-                },
-                "date": {
-                    "lookup": {
-                        "type": "regex",
-                        "param": "\\d{2}\/\\d{2}\/\\d{2,4}",
-                        "match": "cell",
-                        "range": "A1"
-                    }
-                },
-                "brand": {
-                    "value": ""
-                },
-                "part": {
-                    "field": "0",
-                    "value": "part no"
-                },
-                "stock": {
-                    "field": "0",
-                    "value": "stock amt"
                 }
             }
         }
