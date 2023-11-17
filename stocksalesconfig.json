@@ -684,7 +684,7 @@
         {
             "type": "sales",
             "sheet": 1,
-            "start_column": "B",
+            "start_column": "A",
             "start_row": "3",
             "used range": true,
             "rows_config": {
@@ -731,6 +731,50 @@
                 "sales": {
                     "field": "0",
                     "value": "sale amt"
+                }
+            }
+        },
+        {
+            "type": "stock",
+            "sheet": 2,
+            "start_column": "A",
+            "start_row": "4",
+            "used range": true,
+            "rows_config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "B",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D833"
+                },
+                "date": {
+                    "value": ""
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
                 }
             }
         }
