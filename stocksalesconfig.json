@@ -804,6 +804,15 @@
             },
             "rows": {
                 "0" : {
+                    "brand": {
+                        "column": "A",
+                        "format": "text",
+                        "value if contains": {
+                            "JS_NIBK": "NiBK",
+                            "JS_SB": "SB",
+                            "JS_": "JS"
+                        }
+                    },
                     "part no": {
                         "column": "A",
                         "format": "text",
@@ -842,7 +851,8 @@
                     }
                 },
                 "brand": {
-                    "value": ""
+                    "field": "0",
+                    "value": "brand"
                 },
                 "part": {
                     "field": "0",
