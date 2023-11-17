@@ -691,9 +691,6 @@
                 "0": {
                     "required": true,
                     "output": true
-                },
-                "1": {
-                    "required": false
                 }
             },
             "rows": {
@@ -717,7 +714,6 @@
                     "value": "D833"
                 },
                 "date": {
-                    "value": "0",
                     "lookup": {
                         "type": "column",
                         "param": "2:2",
