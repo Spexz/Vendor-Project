@@ -409,7 +409,7 @@
                     "brand": {
                         "column": "A",
                         "format": "text",
-                        "is blank": true
+                        "optional": true
                     },
                     "part no": {
                         "column": "B",
