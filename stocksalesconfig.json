@@ -1,5 +1,5 @@
 {
-    "vendor_config": {
+    "vendor config": {
         "D614": {
             "combine": false
         },
@@ -29,19 +29,19 @@
         {
             "type": "stock",
             "sheet": 1,
-            "start_row": "8",
-            "end_row": {
+            "start row": "8",
+            "end row": {
                 "column" : "D"
             },
-            "start_column": "A",
-            "end_column": "D",
+            "start column": "A",
+            "end column": "D",
             "match": {
                 "type": "contains",
                 "param": "BÁO CÁO TỒN KHO",
                 "sheet": 1,
                 "range": "A3"
             },
-            "rows_config": {
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -119,19 +119,19 @@
         {
             "type": "sales",
             "sheet": 1,
-            "start_row": "8",
-            "end_row": {
+            "start row": "8",
+            "end row": {
                 "column" : "G"
             },
-            "start_column": "A",
-            "end_column": "G",
+            "start column": "A",
+            "end column": "G",
             "match": {
                 "type": "contains",
                 "param": "SỔ CHI TIẾT BÁN HÀNG",
                 "sheet": 1,
                 "range": "A3"
             },
-            "rows_config": {
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -223,13 +223,13 @@
         {
             "type": "stock",
             "sheet": "STOCK LIST",
-            "start_row": "2",
-            "end_row": {
+            "start row": "2",
+            "end row": {
                 "column" : "D"
             },
-            "start_column": "B",
-            "end_column": "D",
-            "rows_config": {
+            "start column": "B",
+            "end column": "D",
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -313,13 +313,13 @@
         {
             "type": "sales",
             "sheet": "STOCK REPORT",
-            "start_row": "2",
-            "end_row": {
+            "start row": "2",
+            "end row": {
                 "column" : "D"
             },
-            "start_column": "B",
-            "end_column": "D",
-            "rows_config": {
+            "start column": "B",
+            "end column": "D",
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -417,13 +417,13 @@
         {
             "type": "both",
             "sheet": -1,
-            "start_row": "3",
-            "end_row": {
+            "start row": "3",
+            "end row": {
                 "column" : "D"
             },
-            "start_column": "A",
-            "end_column": "D",
-            "rows_config": {
+            "start column": "A",
+            "end column": "D",
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -488,13 +488,13 @@
         {
             "type": "sales",
             "sheet": 1,
-            "start_row": "2",
-            "end_row": {
+            "start row": "2",
+            "end row": {
                 "column" : "B"
             },
-            "start_column": "A",
-            "end_column": "B",
-            "rows_config": {
+            "start column": "A",
+            "end column": "B",
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -542,13 +542,13 @@
         {
             "type": "stock",
             "sheet": 1,
-            "start_row": "5",
-            "end_row": {
+            "start row": "5",
+            "end row": {
                 "column" : "C"
             },
-            "start_column": "B",
-            "end_column": "C",
-            "rows_config": {
+            "start column": "B",
+            "end column": "C",
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -595,13 +595,13 @@
         {
             "type": "sales",
             "sheet": 2,
-            "start_row": "5",
-            "end_row": {
+            "start row": "5",
+            "end row": {
                 "column" : "C"
             },
-            "start_column": "B",
-            "end_column": "C",
-            "rows_config": {
+            "start column": "B",
+            "end column": "C",
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -649,13 +649,13 @@
         {
             "type": "both",
             "sheet": 1,
-            "start_row": "2",
-            "end_row": {
+            "start row": "2",
+            "end row": {
                 "column" : "C"
             },
-            "start_column": "A",
-            "end_column": "C",
-            "rows_config": {
+            "start column": "A",
+            "end column": "C",
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -711,10 +711,10 @@
         {
             "type": "stock",
             "sheet": 2,
-            "start_column": "A",
-            "start_row": "4",
+            "start column": "A",
+            "start row": "4",
             "used range": true,
-            "rows_config": {
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -760,10 +760,10 @@
         {
             "type": "sales",
             "sheet": 1,
-            "start_column": "A",
-            "start_row": "3",
+            "start column": "A",
+            "start row": "3",
             "used range": true,
-            "rows_config": {
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
@@ -815,10 +815,10 @@
         {
             "type": "both",
             "sheet": 1,
-            "start_column": "A",
-            "start_row": "3",
+            "start column": "A",
+            "start row": "3",
             "used range": true,
-            "rows_config": {
+            "rows config": {
                 "0": {
                     "required": true,
                     "output": true
