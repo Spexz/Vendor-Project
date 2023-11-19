@@ -201,7 +201,8 @@
                 },
                 "date": {
                     "field": "1",
-                    "value": "date 1"
+                    "value": "date 1",
+                    "use eomonth": false
                 },
                 "brand": {
                     "field": "0",
