@@ -144,28 +144,28 @@
                 "0" : {
                     "brand": {
                         "find": {
-                            "row": "6:7",
+                            "row": "A5:J7",
                             "value": "Kho"
                         },
                         "format": "text"
                     },
                     "part no": {
                         "find": {
-                            "row": "6:7",
+                            "row": "A5:J7",
                             "value": "Mã"
                         },
                         "format": "text"
                     },
                     "sale amt": {
                         "find": {
-                            "row": "6:7",
+                            "row": "A5:J7",
                             "value": "Quy đổi"
                         },
                         "format": "number"
                     },
                     "sale amt 2": {
                         "find": {
-                            "row": "6:7",
+                            "row": "A5:J7",
                             "value": "Số lượng"
                         },
                         "format": "number"
@@ -174,21 +174,21 @@
                 "1" : {
                     "date 1": {
                         "find": {
-                            "row": "6:7",
+                            "row": "A5:J7",
                             "value": "Ngày ghi sổ"
                         },
                         "format": "date"
                     },
                     "date 2": {
                         "find": {
-                            "row": "6:7",
+                            "row": "A5:J7",
                             "value": "Ngày"
                         },
                         "format": "date"
                     },
                     "some no": {
                         "find": {
-                            "row": "6:7",
+                            "row": "A5:J7",
                             "value": "Số"
                         },
                         "format": "text"
