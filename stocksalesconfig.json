@@ -175,7 +175,7 @@
                     "date 1": {
                         "find": {
                             "row": "6:7",
-                            "value": "Ngày ghi sổ"
+                            "value": "Ngày ghi s?"
                         },
                         "format": "date"
                     },
