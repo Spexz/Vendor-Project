@@ -945,7 +945,6 @@
                     "field": "0",
                     "value": "part no",
                     "custom parse": "ParsePartNumberD491D702"
-                    }
                 },
                 "stock": {
                     "field": "0",
