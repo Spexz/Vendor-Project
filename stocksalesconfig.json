@@ -913,14 +913,7 @@
                 "0" : {
                     "part no": {
                         "column": "C",
-                        "format": "text",
-                        "replace": {
-                            "Remove J at End" : {
-                                "regex": "J\\-?([A-Z]{1,})?$",
-                                "replace with": ""
-                            },
-                            "-": ""
-                        }
+                        "format": "text"
                     },
                     "stock amt": {
                         "column": "D",
@@ -950,7 +943,9 @@
                 },
                 "part": {
                     "field": "0",
-                    "value": "part no"
+                    "value": "part no",
+                    "custom parse": "ParsePartNumberD491D702"
+                    }
                 },
                 "stock": {
                     "field": "0",
