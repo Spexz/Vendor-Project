@@ -23,6 +23,9 @@
         },
         "D336": {
             "combine": false
+        },
+        "D491D702": {
+            "combine": false
         }
     },
     "D614": [
@@ -875,6 +878,75 @@
                 "brand": {
                     "field": "0",
                     "value": "brand"
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt",
+                    "if empty": 0
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt",
+                    "if empty": 0
+                }
+            }
+        }
+    ],
+    "D491D702": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start column": "B",
+            "start row": "4",
+            "end column": "E",
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "C",
+                        "format": "text",
+                        "replace": {
+                            "Remove J at End" : {
+                                "regex": "J\\-?([A-Z]{1,})?$",
+                                "replace with": ""
+                            },
+                            "-": ""
+                        }
+                    },
+                    "stock amt": {
+                        "column": "D",
+                        "format": "number"
+                    },
+                    "sale amt": {
+                        "column": "E",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D491D702"
+                },
+                "date": {
+                    "value": 0,
+                    "lookup": {
+                        "type": "regex",
+                        "param": "^[a-zA-Z]+ [0-9]{4}",
+                        "match": "cell",
+                        "range": "E3"
+                    }
+                },
+                "brand": {
+                    "value": ""
                 },
                 "part": {
                     "field": "0",
