@@ -26,6 +26,9 @@
         },
         "D491D702": {
             "combine": false
+        },
+        "D388": {
+            "combine": false
         }
     },
     "D614": [
@@ -955,6 +958,60 @@
                     "field": "0",
                     "value": "sale amt",
                     "if empty": 0
+                }
+            }
+        }
+    ],
+    "D388": [
+        {
+            "type": "sales",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "brand": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "part no": {
+                        "column": "B",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "column": "D",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D388"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "Sale Date"
+                    } 
+                },
+                "brand": {
+                    "field": "0",
+                    "value": "brand"
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
                 }
             }
         }
