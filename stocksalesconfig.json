@@ -988,6 +988,10 @@
                     "sale amt": {
                         "column": "D",
                         "format": "number"
+                    },
+                    "stock amt": {
+                        "column": "E",
+                        "format": "number"
                     }
                 }
             },
@@ -1012,6 +1016,10 @@
                 "sales": {
                     "field": "0",
                     "value": "sale amt"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
                 }
             }
         }
