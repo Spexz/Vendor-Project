@@ -964,7 +964,7 @@
     ],
     "D388": [
         {
-            "type": "sales",
+            "type": "both",
             "sheet": 1,
             "start column": "A",
             "start row": "2",
