@@ -1181,7 +1181,7 @@
                         "format": "text"
                     },
                     "desc": {
-                        "column": "C",
+                        "column": "B",
                         "format": "text"
                     },
                     "sale amt": {
