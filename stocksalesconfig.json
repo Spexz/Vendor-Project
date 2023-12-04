@@ -1196,7 +1196,7 @@
                         "column": "D",
                         "format": "number",
                         "replace": {
-                            " ": "",
+                            " ": "",
                             ",": "."
                         }
                     }
