@@ -1046,7 +1046,7 @@
                         "column": "B",
                         "format": "text",
                         "replace": {
-                            " ": ""
+                            "-": ""
                         }
                     },
                     "sale amt": {
