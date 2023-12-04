@@ -1186,11 +1186,19 @@
                     },
                     "sale amt": {
                         "column": "C",
-                        "format": "number"
+                        "format": "number",
+                        "replace": {
+                            " ": "",
+                            ",": "."
+                        }
                     },
                     "stock amt": {
                         "column": "D",
-                        "format": "number"
+                        "format": "number",
+                        "replace": {
+                            " ": "",
+                            ",": "."
+                        }
                     }
                 }
             },
