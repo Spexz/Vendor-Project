@@ -1135,11 +1135,9 @@
                     "value": "D1019"
                 },
                 "date": {
-                    "date": {
-                        "lookup": {
-                            "type": "extract month",
-                            "from": "filename"
-                        } 
+                    "lookup": {
+                        "type": "extract month",
+                        "from": "filename"
                     }
                 },
                 "brand": {
