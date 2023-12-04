@@ -35,6 +35,9 @@
         },
         "D1019": {
             "combine": false
+        },
+        "D347": {
+            "combine": false
         }
     },
     "D614": [
@@ -1133,6 +1136,67 @@
             "output fields": {
                 "account_no": {
                     "value": "D1019"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "extract month",
+                        "from": "filename"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
+                }
+            }
+        }
+    ],
+    "D347": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "7",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "desc": {
+                        "column": "C",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "column": "C",
+                        "format": "number"
+                    },
+                    "stock amt": {
+                        "column": "D",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D347"
                 },
                 "date": {
                     "lookup": {
