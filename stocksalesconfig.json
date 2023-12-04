@@ -1044,7 +1044,10 @@
                 "0" : {
                     "part no": {
                         "column": "B",
-                        "format": "text"
+                        "format": "text",
+                        "replace": {
+                            " ": ""
+                        }
                     },
                     "sale amt": {
                         "lookup": {
