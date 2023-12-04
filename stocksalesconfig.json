@@ -29,6 +29,9 @@
         },
         "D388": {
             "combine": false
+        },
+        "D1161": {
+            "combine": false
         }
     },
     "D614": [
@@ -1008,6 +1011,74 @@
                 "brand": {
                     "field": "0",
                     "value": "brand"
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
+                }
+            }
+        }
+    ],
+    "D1161": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "B",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "1:1",
+                            "text": "TOTAL",
+                            "column offset": -1
+                        },
+                        "format": "number"
+                    },
+                    "stock amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "1:1",
+                            "text": "STOCK"
+                        },
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D1161"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "text",
+                        "match": "TOTAL",
+                        "range": "1:1",
+                        "column offset": -1
+                    }
+                },
+                "brand": {
+                    "value": ""
                 },
                 "part": {
                     "field": "0",
