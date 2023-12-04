@@ -1331,7 +1331,8 @@
                     "sale amt": {
                         "column": "E",
                         "format": "number",
-                        "if empty": 0
+                        "if empty": 0,
+                        "optional": true
                     }
                 }
             },
