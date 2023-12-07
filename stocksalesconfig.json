@@ -872,11 +872,13 @@
                     },
                     "stock amt": {
                         "column": "B",
-                        "format": "number"
+                        "format": "number",
+                        "if empty": 0
                     },
                     "sale amt": {
                         "column": "C",
-                        "format": "number"
+                        "format": "number",
+                        "if empty": 0
                     }
                 }
             },
