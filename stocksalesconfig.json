@@ -352,11 +352,11 @@
             "rows": {
                 "0" : {
                     "code": {
-                        "column": "B",
+                        "column": "A",
                         "format": "text"
                     },
                     "part no": {
-                        "column": "B",
+                        "column": "A",
                         "format": "text",
                         "offset": 1,
                         "lookup": {
@@ -366,21 +366,21 @@
                         }
                     },
                     "description": {
-                        "column": "C",
+                        "column": "B",
                         "format": "text"
                     },
                     "sale amt": {
-                        "column": "D",
+                        "column": "C",
                         "format": "number"
                     },
                     "description blank": {
-                        "column": "C",
+                        "column": "B",
                         "format": "text",
                         "offset": 1,
                         "is blank": true
                     },
                     "sale amt blank": {
-                        "column": "D",
+                        "column": "C",
                         "format": "number",
                         "offset": 1,
                         "is blank": true
@@ -388,21 +388,21 @@
                 },
                 "1": {
                     "part no": {
-                        "column": "B",
+                        "column": "A",
                         "format": "text"
                     },
                     "code": {
-                        "column": "B",
+                        "column": "A",
                         "format": "text",
                         "offset": -1
                     },
                     "description": {
-                        "column": "C",
+                        "column": "B",
                         "format": "text",
                         "offset": -1
                     },
                     "sale amt": {
-                        "column": "D",
+                        "column": "C",
                         "format": "number",
                         "offset": -1
                     }
