@@ -1404,7 +1404,7 @@
                     } 
                 },
                 "brand": {
-                    "field": ""
+                    "value": ""
                 },
                 "part": {
                     "field": "0",
@@ -1455,7 +1455,7 @@
                     } 
                 },
                 "brand": {
-                    "field": ""
+                    "value": ""
                 },
                 "part": {
                     "field": "0",
