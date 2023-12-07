@@ -245,9 +245,6 @@
             "type": "stock",
             "sheet": "STOCK LIST",
             "start row": "2",
-            "end row": {
-                "column" : "D"
-            },
             "start column": "B",
             "end column": "D",
             "rows config": {
@@ -335,11 +332,8 @@
             "type": "sales",
             "sheet": "STOCK REPORT",
             "start row": "2",
-            "end row": {
-                "column" : "D"
-            },
-            "start column": "B",
-            "end column": "D",
+            "start column": "A",
+            "end column": "C",
             "rows config": {
                 "0": {
                     "required": true,
