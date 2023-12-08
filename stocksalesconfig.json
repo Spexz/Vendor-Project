@@ -1487,7 +1487,7 @@
             "rows": {
                 "0" : {
                     "part no": {
-                        "column": "A",
+                        "column": "C",
                         "format": "text",
                         "replace": {
                             "remove j": {"index": 1, "replace": "J",  "with": ""}
@@ -1500,7 +1500,7 @@
                     "sale amt": {
                         "lookup": {
                             "type": "column",
-                            "param": "2:2",
+                            "param": "1:1",
                             "input": "D617 Date"
                         },
                         "format": "number"
