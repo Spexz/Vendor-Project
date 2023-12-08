@@ -1499,9 +1499,11 @@
                     },
                     "sale amt": {
                         "lookup": {
-                            "type": "input",
+                            "type": "column",
+                            "param": "2:2",
                             "input": "D617 Date"
-                        }
+                        },
+                        "format": "number"
                     }
                 }
             },
