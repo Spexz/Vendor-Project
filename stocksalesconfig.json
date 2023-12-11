@@ -50,6 +50,9 @@
         },
         "D617": {
             "combine": false
+        },
+        "D1176": {
+            "combine": false
         }
     },
     "D614": [
@@ -1515,6 +1518,77 @@
                     "lookup": {
                         "type": "input",
                         "input": "D617 Date"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt",
+                    "if empty": 0
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt",
+                    "if empty": 0
+                }
+            }
+        }
+    ],
+    "D1176": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text",
+                        "replace": {
+                            "NIBK": "",
+                            " ": ""
+                        }
+                    },
+                    "stock amt": {
+                        "find": {
+                            "row": "1:1",
+                            "value": "Stock Balance"
+                        },
+                        "format": "number"
+                    },
+                    "sale amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "2:2",
+                            "input": "D1176 Date"
+                        },
+                        "format": "number",
+                        "optional": true
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D1176"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "D1176 Date"
                     }
                 },
                 "brand": {
