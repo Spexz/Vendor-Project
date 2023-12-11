@@ -1573,7 +1573,7 @@
                     "sale amt": {
                         "lookup": {
                             "type": "column",
-                            "param": "2:2",
+                            "param": "1:1",
                             "input": "D1176 Date"
                         },
                         "format": "number",
