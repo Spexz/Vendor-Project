@@ -53,6 +53,9 @@
         },
         "D1176": {
             "combine": false
+        },
+        "D1045": {
+            "combine": false
         }
     },
     "D614": [
@@ -1589,6 +1592,65 @@
                     "lookup": {
                         "type": "input",
                         "input": "D1176 Date"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt",
+                    "if empty": 0
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt",
+                    "if empty": 0
+                }
+            }
+        }
+    ],
+    "D1045": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "3",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "C",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "J",
+                        "format": "number"
+                    },
+                    "sale amt": {
+                        "column": "E",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D1045"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "D1045 Date"
                     }
                 },
                 "brand": {
