@@ -56,6 +56,9 @@
         },
         "D1045": {
             "combine": false
+        },
+        "D603": {
+            "combine": false
         }
     },
     "D614": [
@@ -1668,6 +1671,56 @@
                 "sales": {
                     "field": "0",
                     "value": "sale amt",
+                    "if empty": 0
+                }
+            }
+        }
+    ],
+    "D603": [
+        {
+            "type": "stock",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "H",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "F",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D603"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "Date"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt",
                     "if empty": 0
                 }
             }
