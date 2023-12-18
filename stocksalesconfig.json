@@ -1784,7 +1784,7 @@
         },
         {
             "type": "sales",
-            "sheet": "Sales ",
+            "sheet": "Sales",
             "start column": "A",
             "start row": "2",
             "used range": true,
