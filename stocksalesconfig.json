@@ -59,6 +59,9 @@
         },
         "D603": {
             "combine": false
+        },
+        "D1038": {
+            "combine": true
         }
     },
     "D614": [
@@ -1721,6 +1724,112 @@
                 "stock": {
                     "field": "0",
                     "value": "stock amt",
+                    "if empty": 0
+                }
+            }
+        }
+    ],
+    "D1038": [
+        {
+            "type": "stock",
+            "sheet": "Stock",
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "1:1",
+                            "input": "Date"
+                        },
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D1038"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "Date"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt",
+                    "if empty": 0
+                }
+            }
+        },
+        {
+            "type": "sales",
+            "sheet": "Sales ",
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "1:1",
+                            "input": "Date"
+                        },
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D1038"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "Date"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt",
                     "if empty": 0
                 }
             }
