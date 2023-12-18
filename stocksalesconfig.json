@@ -930,7 +930,7 @@
             "type": "both",
             "sheet": 1,
             "start column": "B",
-            "start row": "4",
+            "start row": "3",
             "end column": "E",
             "rows config": {
                 "0": {
