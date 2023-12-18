@@ -964,7 +964,7 @@
                         "type": "regex",
                         "param": "^[a-zA-Z]+ [0-9]{4}",
                         "match": "cell",
-                        "range": "E3"
+                        "range": "E2"
                     }
                 },
                 "brand": {
