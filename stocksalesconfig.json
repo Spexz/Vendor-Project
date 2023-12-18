@@ -1898,6 +1898,10 @@
                 "stock": {
                     "field": "0",
                     "value": "stock amt"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
                 }
             }
         }
