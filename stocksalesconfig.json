@@ -61,7 +61,7 @@
             "combine": false
         },
         "D1038": {
-            "combine": false
+            "combine": true
         },
         "D1057": {
             "combine": false
@@ -1809,7 +1809,8 @@
                         "lookup": {
                             "type": "column",
                             "param": "1:1",
-                            "input": "Date"
+                            "input": "Date",
+                            "find-last": true
                         },
                         "format": "number",
                         "optional": true
