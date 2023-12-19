@@ -1755,7 +1755,8 @@
                         "lookup": {
                             "type": "column",
                             "param": "1:1",
-                            "input": "Date"
+                            "input": "Date",
+                            "find-last": true
                         },
                         "format": "number",
                         "optional": true
