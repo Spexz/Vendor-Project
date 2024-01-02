@@ -1103,11 +1103,9 @@
                 },
                 "date": {
                     "lookup": {
-                        "type": "text",
-                        "match": "TOTAL",
-                        "range": "1:1",
-                        "column offset": -1
-                    }
+                        "type": "input",
+                        "input": "Date"
+                    } 
                 },
                 "brand": {
                     "value": ""
