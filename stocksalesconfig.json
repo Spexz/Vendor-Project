@@ -65,6 +65,9 @@
         },
         "D1057": {
             "combine": false
+        },
+        "D491D1031": {
+            "combine": false
         }
     },
     "D614": [
@@ -1890,6 +1893,70 @@
                 },
                 "brand": {
                     "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                }
+            }
+        }
+    ],
+    "D491D1031": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "brand": {
+                        "column": "B",
+                        "format": "text"
+                    },
+                    "part no": {
+                        "column": "C",
+                        "format": "text"
+                    },
+                    "date": {
+                        "column": "D",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "column": "E",
+                        "format": "number"
+                    },
+                    "stock amt": {
+                        "column": "F",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D491D1031"
+                },
+                "date": {
+                    "field": "0",
+                    "value": "date"
+                },
+                "brand": {
+                    "field": "0",
+                    "value": "brand"
                 },
                 "part": {
                     "field": "0",
