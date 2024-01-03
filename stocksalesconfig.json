@@ -1998,11 +1998,11 @@
                         "column": "A",
                         "format": "text"
                     },
-                    "sale amt": {
+                    "stock amt": {
                         "column": "B",
                         "format": "number"
                     },
-                    "stock amt": {
+                    "sale amt": {
                         "column": "C",
                         "format": "number"
                     }
