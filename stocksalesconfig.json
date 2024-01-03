@@ -1934,7 +1934,7 @@
                     },
                     "date": {
                         "column": "D",
-                        "format": "text"
+                        "format": "date"
                     },
                     "sale amt": {
                         "column": "E",
