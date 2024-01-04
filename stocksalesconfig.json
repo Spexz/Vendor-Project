@@ -18,8 +18,11 @@
         "D491D1124": {
             "combine": false
         },
-        "D833": {
+        "D833.Old": {
             "combine": true
+        },
+        "D833": {
+            "combine": false
         },
         "D336": {
             "combine": false
@@ -752,7 +755,7 @@
             }
         }
     ],
-    "D833": [
+    "D833.Old": [
         {
             "type": "stock",
             "sheet": 2,
@@ -2030,6 +2033,110 @@
                 "stock": {
                     "field": "0",
                     "value": "stock amt"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                }
+            }
+        }
+    ],
+    "D833": [
+        {
+            "type": "stock",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "match": {
+                "type": "filename contains",
+                "param": "SOH"
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "E",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D833"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "D833 Date"
+                    } 
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
+                }
+            }
+        },
+        {
+            "type": "sales",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "4",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "match": {
+                "type": "filename contains",
+                "param": "SALES"
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "column": "B",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D833"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "D833 Date"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
                 },
                 "sales": {
                     "field": "0",
