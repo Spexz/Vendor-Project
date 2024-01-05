@@ -534,14 +534,14 @@
     ],
     "D541": [
         {
-            "type": "sales",
+            "type": "both",
             "sheet": 1,
             "start row": "2",
             "end row": {
-                "column" : "B"
+                "column" : "C"
             },
             "start column": "A",
-            "end column": "B",
+            "end column": "C",
             "rows config": {
                 "0": {
                     "required": true,
@@ -556,6 +556,10 @@
                     },
                     "sale amt": {
                         "column": "B",
+                        "format": "number"
+                    },
+                    "stock amt": {
+                        "column": "C",
                         "format": "number"
                     }
                 }
@@ -582,6 +586,10 @@
                 "sales": {
                     "field": "0",
                     "value": "sale amt"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
                 }
             }
         }
