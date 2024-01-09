@@ -77,6 +77,9 @@
         },
         "D491D1141": {
             "combine": false
+        },
+        "D491D577": {
+            "combine": false
         }
     },
     "D614": [
@@ -2138,6 +2141,59 @@
                         "type": "input",
                         "input": "D833 Date"
                     }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                }
+            }
+        }
+    ],
+    "D491D577": [
+        {
+            "type": "sales",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "3",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "2:2",
+                            "text": "TOTAL"
+                        },
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D491D577"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "Date"
+                    } 
                 },
                 "brand": {
                     "value": ""
