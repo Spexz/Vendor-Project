@@ -83,6 +83,9 @@
         },
         "D738": {
             "combine": true
+        },
+        "D984": {
+            "combine": true
         }
     },
     "D614": [
@@ -2310,6 +2313,107 @@
                 "brand": {
                     "field": "0",
                     "value": "brand"
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                }
+            }
+        }
+    ],
+    "D984": [
+        {
+            "type": "stock",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "C",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D984"
+                },
+                "date": {
+                    "value": 0,
+                    "lookup": {
+                        "type": "regex",
+                        "param": "\\s\\d{1,2}-\\d{1,2}-\\d{4}",
+                        "match": "filename"
+                    },
+                    "date format": "dd-mm-yyyy"
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
+                }
+            }
+        },
+        {
+            "type": "sales",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "column": "C",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D984"
+                },
+                "date": {
+                    "value": 0,
+                    "lookup": {
+                        "type": "regex",
+                        "param": "\\s[a-zA-Z]{3,}\\s+[0-9]{4}",
+                        "match": "filename"
+                    }
+                },
+                "brand": {
+                    "value": ""
                 },
                 "part": {
                     "field": "0",
