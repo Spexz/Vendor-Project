@@ -1513,7 +1513,7 @@
             }
         }
     ],
-    "D617": [
+    "D617.old": [
         {
             "type": "both",
             "sheet": 1,
@@ -1537,6 +1537,72 @@
                     },
                     "stock amt": {
                         "column": "E",
+                        "format": "number"
+                    },
+                    "sale amt": {
+                        "lookup": {
+                            "type": "column",
+                            "param": "1:1",
+                            "input": "D617 Date"
+                        },
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D617"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "input",
+                        "input": "D617 Date"
+                    }
+                },
+                "brand": {
+                    "value": ""
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt",
+                    "if empty": 0
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt",
+                    "if empty": 0
+                }
+            }
+        }
+    ],
+    "D617": [
+        {
+            "type": "both",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text",
+                        "replace": {
+                            "remove j": {"index": 1, "replace": "J",  "with": ""}
+                        }
+                    },
+                    "stock amt": {
+                        "column": "B",
                         "format": "number"
                     },
                     "sale amt": {
