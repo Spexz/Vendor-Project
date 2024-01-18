@@ -1791,11 +1791,11 @@
             "rows": {
                 "0" : {
                     "part no": {
-                        "column": "H",
+                        "column": "I",
                         "format": "text"
                     },
                     "stock amt": {
-                        "column": "F",
+                        "column": "G",
                         "format": "number"
                     }
                 }
