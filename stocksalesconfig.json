@@ -1240,7 +1240,8 @@
                         "replace": {
                             " ": "",
                             ",": "."
-                        }
+                        },
+                        "optional": true
                     },
                     "stock amt": {
                         "column": "D",
@@ -1248,7 +1249,8 @@
                         "replace": {
                             " ": "",
                             ",": "."
-                        }
+                        },
+                        "optional": true
                     }
                 }
             },
@@ -1271,11 +1273,13 @@
                 },
                 "sales": {
                     "field": "0",
-                    "value": "sale amt"
+                    "value": "sale amt",
+                    "if empty": 0
                 },
                 "stock": {
                     "field": "0",
-                    "value": "stock amt"
+                    "value": "stock amt",
+                    "if empty": 0
                 }
             }
         }
