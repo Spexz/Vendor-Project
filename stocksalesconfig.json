@@ -2529,7 +2529,7 @@
                     "stock amt": {
                         "lookup": {
                             "type": "column",
-                            "param": "1:1",
+                            "param": "2:2",
                             "input": "D491D1057 Date"
                         },
                         "format": "number"
