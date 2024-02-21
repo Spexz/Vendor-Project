@@ -2008,7 +2008,7 @@
             }
         }
     ],
-    "D491D1031": [
+    "D491D1031.old": [
         {
             "type": "both",
             "sheet": 1,
@@ -2064,6 +2064,118 @@
                 "stock": {
                     "field": "0",
                     "value": "stock amt"
+                },
+                "sales": {
+                    "field": "0",
+                    "value": "sale amt"
+                }
+            }
+        }
+    ],
+    "D491D1031": [
+        {
+            "type": "stock",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "match": {
+                "type": "filename contains",
+                "param": "Stock"
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "brand": {
+                        "column": "B",
+                        "format": "text"
+                    },
+                    "stock amt": {
+                        "column": "C",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D491D1031"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "extract month",
+                        "from": "filename"
+                    }
+                },
+                "brand": {
+                    "value": "brand"
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
+                },
+                "stock": {
+                    "field": "0",
+                    "value": "stock amt"
+                }
+            }
+        },
+        {
+            "type": "sales",
+            "sheet": 1,
+            "start column": "A",
+            "start row": "2",
+            "used range": true,
+            "rows config": {
+                "0": {
+                    "required": true,
+                    "output": true
+                }
+            },
+            "match": {
+                "type": "filename contains",
+                "param": "Sales"
+            },
+            "rows": {
+                "0" : {
+                    "part no": {
+                        "column": "A",
+                        "format": "text"
+                    },
+                    "brand": {
+                        "column": "C",
+                        "format": "text"
+                    },
+                    "sale amt": {
+                        "column": "B",
+                        "format": "number"
+                    }
+                }
+            },
+            "output fields": {
+                "account_no": {
+                    "value": "D491D1031"
+                },
+                "date": {
+                    "lookup": {
+                        "type": "extract month",
+                        "from": "filename"
+                    }
+                },
+                "brand": {
+                    "value": "brand"
+                },
+                "part": {
+                    "field": "0",
+                    "value": "part no"
                 },
                 "sales": {
                     "field": "0",
