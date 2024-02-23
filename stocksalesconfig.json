@@ -2744,7 +2744,7 @@
             "type": "sales",
             "sheet": "SALES DATA",
             "start column": "B",
-            "start row": "4",
+            "start row": "5",
             "used range": true,
             "rows config": {
                 "0": {
@@ -2761,7 +2761,7 @@
                     "sale amt": {
                         "lookup": {
                             "type": "column",
-                            "param": "5:5",
+                            "param": "4:4",
                             "input": "D491D866 Date"
                         },
                         "format": "number",
