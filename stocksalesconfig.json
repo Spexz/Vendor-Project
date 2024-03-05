@@ -260,7 +260,7 @@
                             "row": "A5:J7",
                             "value": "Số"
                         },
-                        "format": "text"
+                        "format": ["text", "number"]
                     }
                 }
             },
