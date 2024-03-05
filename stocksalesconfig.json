@@ -145,7 +145,7 @@
                     },
                     "description": {
                         "column": "B",
-                        "format": "text"
+                        "format": ["text", "number"]
                     },
                     "unit": {
                         "column": "C",
