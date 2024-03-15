@@ -971,7 +971,7 @@
             "type": "both",
             "sheet": 1,
             "start column": "B",
-            "start row": "3",
+            "start row": "4",
             "end column": "E",
             "rows config": {
                 "0": {
@@ -999,13 +999,20 @@
                 "account_no": {
                     "value": "D491D702"
                 },
-                "date": {
+                "date.old": {
                     "value": 0,
                     "lookup": {
                         "type": "regex",
                         "param": "^[a-zA-Z]+ [0-9]{4}",
                         "match": "cell",
                         "range": "E2"
+                    }
+                },
+                "date": {
+                    "lookup": {
+                        "type": "extract month",
+                        "from": "cell",
+                        "cell": "E3"
                     }
                 },
                 "brand": {
