@@ -1052,19 +1052,19 @@
             "rows": {
                 "0" : {
                     "brand": {
-                        "column": "A",
+                        "column": "D",
                         "format": "text"
                     },
                     "part no": {
-                        "column": "B",
+                        "column": "A",
                         "format": "text"
                     },
                     "sale amt": {
-                        "column": "D",
+                        "column": "B",
                         "format": "number"
                     },
                     "stock amt": {
-                        "column": "E",
+                        "column": "C",
                         "format": "number"
                     }
                 }
