@@ -2839,7 +2839,7 @@
         "date": {
           "lookup": {
             "type": "input",
-            "input": "Date"
+            "input": "Sale Date"
           },
           "date format": "dd/mm/yyyy"
         },
