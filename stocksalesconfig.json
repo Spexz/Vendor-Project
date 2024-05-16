@@ -2840,8 +2840,7 @@
           "lookup": {
             "type": "input",
             "input": "Sale Date"
-          },
-          "date format": "dd/mm/yyyy"
+          }
         },
         "brand": {
           "value": ""
