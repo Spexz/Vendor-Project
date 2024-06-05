@@ -2829,7 +2829,6 @@
           "sale amt": {
             "column": "D",
             "format": ["text", "number"],
-            "if empty": 0,
             "optional": true
           }
         }
@@ -2857,7 +2856,8 @@
         },
         "sales": {
           "field": "0",
-          "value": "sale amt"
+          "value": "sale amt",
+          "if empty": 0
         }
       }
     }
