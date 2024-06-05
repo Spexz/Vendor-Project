@@ -2819,7 +2819,7 @@
       "rows": {
         "0": {
           "part no": {
-            "column": "B",
+            "column": "C",
             "format": "text"
           },
           "stock amt": {
@@ -2828,7 +2828,8 @@
           },
           "sale amt": {
             "column": "D",
-            "format": "number"
+            "format": "number",
+            "if empty": 0
           }
         }
       },
