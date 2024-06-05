@@ -2829,7 +2829,8 @@
           "sale amt": {
             "column": "D",
             "format": "number",
-            "if empty": 0
+            "if empty": 0,
+            "optional": true
           }
         }
       },
