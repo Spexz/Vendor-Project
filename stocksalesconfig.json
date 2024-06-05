@@ -2828,7 +2828,7 @@
           },
           "sale amt": {
             "column": "D",
-            "format": "number",
+            "format": ["text", "number"],
             "if empty": 0,
             "optional": true
           }
