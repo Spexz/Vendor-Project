@@ -1993,7 +1993,7 @@
       "type": "stock",
       "sheet": "Stock",
       "start column": "A",
-      "start row": "2",
+      "start row": "3",
       "used range": true,
       "rows config": {
         "0": {
@@ -2010,7 +2010,7 @@
           "stock amt": {
             "lookup": {
               "type": "column",
-              "param": "1:1",
+              "param": "2:2",
               "input": "Date",
               "find-last": true
             },
@@ -2047,7 +2047,7 @@
       "type": "sales",
       "sheet": "Sales",
       "start column": "A",
-      "start row": "2",
+      "start row": "3",
       "used range": true,
       "rows config": {
         "0": {
@@ -2064,7 +2064,7 @@
           "sale amt": {
             "lookup": {
               "type": "column",
-              "param": "1:1",
+              "param": "2:2",
               "input": "Date",
               "find-last": true
             },
