@@ -1463,10 +1463,10 @@
             "format": "number"
           },
           "sale amt": {
-            "lookup": {
-              "type": "column",
-              "param": "1:1",
-              "text": "SALE"
+            "find": {
+              "row": "1:1",
+              "regex": true,
+              "value": "^SALE *"
             },
             "format": "number",
             "optional": true
