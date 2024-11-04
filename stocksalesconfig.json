@@ -24,8 +24,11 @@
     "D833": {
       "combine": false
     },
-    "D336": {
+    "D336.old": {
       "combine": false
+    },
+    "D336": {
+      "combine": true
     },
     "D491D702": {
       "combine": false
@@ -383,8 +386,8 @@
       "type": "sales",
       "sheet": "STOCK REPORT",
       "start row": "2",
-      "start column": "A",
-      "end column": "C",
+      "start column": "B",
+      "end column": "D",
       "rows config": {
         "0": {
           "required": true,
@@ -397,11 +400,11 @@
       "rows": {
         "0": {
           "code": {
-            "column": "A",
+            "column": "B",
             "format": "text"
           },
           "part no": {
-            "column": "A",
+            "column": "C",
             "format": "text",
             "offset": 1,
             "lookup": {
@@ -411,21 +414,15 @@
             }
           },
           "description": {
-            "column": "B",
+            "column": "C",
             "format": "text"
           },
           "sale amt": {
-            "column": "C",
+            "column": "D",
             "format": "number"
           },
-          "description blank": {
-            "column": "B",
-            "format": "text",
-            "offset": 1,
-            "is blank": true
-          },
           "sale amt blank": {
-            "column": "C",
+            "column": "D",
             "format": "number",
             "offset": 1,
             "is blank": true
@@ -433,21 +430,21 @@
         },
         "1": {
           "part no": {
-            "column": "A",
+            "column": "C",
             "format": "text"
           },
           "code": {
-            "column": "A",
-            "format": "text",
-            "offset": -1
-          },
-          "description": {
             "column": "B",
             "format": "text",
             "offset": -1
           },
-          "sale amt": {
+          "description": {
             "column": "C",
+            "format": "text",
+            "offset": -1
+          },
+          "sale amt": {
+            "column": "D",
             "format": "number",
             "offset": -1
           }
@@ -885,7 +882,7 @@
       }
     }
   ],
-  "D336": [
+  "D336.old": [
     {
       "type": "both",
       "sheet": 1,
@@ -960,6 +957,152 @@
           "field": "0",
           "value": "stock amt",
           "if empty": 0
+        },
+        "sales": {
+          "field": "0",
+          "value": "sale amt",
+          "if empty": 0
+        }
+      }
+    }
+  ],
+  "D336": [
+    {
+      "type": "stock",
+      "sheet": 1,
+      "start column": "A",
+      "start row": "3",
+      "used range": true,
+      "rows config": {
+        "0": {
+          "required": true,
+          "output": true
+        }
+      },
+      "rows": {
+        "0": {
+          "brand": {
+            "column": "A",
+            "format": "text",
+            "value if contains": {
+              "JS_NIBK": "NiBK",
+              "JS_SB": "SB",
+              "JS_": "JS"
+            }
+          },
+          "part no": {
+            "column": "A",
+            "format": "text",
+            "replace": {
+              "JS_": "",
+              "JS ": "",
+              "NIBK_": "",
+              "NIBK ": "",
+              "SB_": "",
+              "SB ": "",
+              "_": "",
+              " ": ""
+            }
+          },
+          "stock amt": {
+            "column": "B",
+            "format": "number",
+            "optional": true
+          }
+        }
+      },
+      "output fields": {
+        "account_no": {
+          "value": "D336"
+        },
+        "date": {
+          "value": 0,
+          "lookup": {
+            "type": "regex",
+            "param": "[a-zA-Z]{3,}\\s+[0-9]{2,}",
+            "match": "filename",
+            "translate": true
+          }
+        },
+        "brand": {
+          "field": "0",
+          "value": "brand"
+        },
+        "part": {
+          "field": "0",
+          "value": "part no"
+        },
+        "stock": {
+          "field": "0",
+          "value": "stock amt",
+          "if empty": 0
+        }
+      }
+    },
+    {
+      "type": "sales",
+      "sheet": 2,
+      "start column": "A",
+      "start row": "4",
+      "used range": true,
+      "rows config": {
+        "0": {
+          "required": true,
+          "output": true
+        }
+      },
+      "rows": {
+        "0": {
+          "brand": {
+            "column": "A",
+            "format": "text",
+            "value if contains": {
+              "JS_NIBK": "NiBK",
+              "JS_SB": "SB",
+              "JS_": "JS"
+            }
+          },
+          "part no": {
+            "column": "A",
+            "format": "text",
+            "replace": {
+              "JS_": "",
+              "JS ": "",
+              "NIBK_": "",
+              "NIBK ": "",
+              "SB_": "",
+              "SB ": "",
+              "_": "",
+              " ": ""
+            }
+          },
+          "sale amt": {
+            "column": "B",
+            "format": "number",
+            "optional": true
+          }
+        }
+      },
+      "output fields": {
+        "account_no": {
+          "value": "D336"
+        },
+        "date": {
+          "value": 0,
+          "lookup": {
+            "type": "regex",
+            "param": "[a-zA-Z]{3,}\\s+[0-9]{2,}",
+            "match": "filename",
+            "translate": true
+          }
+        },
+        "brand": {
+          "field": "0",
+          "value": "brand"
+        },
+        "part": {
+          "field": "0",
+          "value": "part no"
         },
         "sales": {
           "field": "0",
@@ -1924,7 +2067,7 @@
       "type": "stock",
       "sheet": "Stock",
       "start column": "A",
-      "start row": "2",
+      "start row": "3",
       "used range": true,
       "rows config": {
         "0": {
@@ -1941,7 +2084,7 @@
           "stock amt": {
             "lookup": {
               "type": "column",
-              "param": "1:1",
+              "param": "2:2",
               "input": "Date",
               "find-last": true
             },
@@ -1978,7 +2121,7 @@
       "type": "sales",
       "sheet": "Sales",
       "start column": "A",
-      "start row": "2",
+      "start row": "3",
       "used range": true,
       "rows config": {
         "0": {
@@ -1995,7 +2138,7 @@
           "sale amt": {
             "lookup": {
               "type": "column",
-              "param": "1:1",
+              "param": "2:2",
               "input": "Date",
               "find-last": true
             },
