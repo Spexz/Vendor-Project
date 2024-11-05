@@ -747,7 +747,7 @@
             "format": "number"
           },
           "sale amt": {
-            "column": "C",
+            "column": "D",
             "format": "number"
           }
         }
