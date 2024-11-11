@@ -883,11 +883,11 @@
             "format": "text"
           },
           "stock amt": {
-            "column": "B",
+            "column": "D",
             "format": "number"
           },
           "sale amt": {
-            "column": "C",
+            "column": "E",
             "format": "number"
           }
         }
