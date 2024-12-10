@@ -1154,7 +1154,7 @@
             "optional": true
           },
           "sale amt": {
-            "column": "B",
+            "column": "C",
             "format": "number",
             "optional": true
           }
