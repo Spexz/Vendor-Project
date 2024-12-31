@@ -3217,11 +3217,13 @@
         },
         "stock": {
           "field": "0",
-          "value": "stock amt"
+          "value": "stock amt",
+          "optional": true
         },
         "sales": {
           "field": "0",
-          "value": "sale amt"
+          "value": "sale amt",
+          "optional": true
         }
       }
     }
