@@ -3189,11 +3189,13 @@
           },
           "sale amt": {
             "column": "D",
-            "format": "number"
+            "format": "number",
+            "optional": true
           },
           "stock amt": {
             "column": "E",
-            "format": "number"
+            "format": "number",
+            "optional": true
           }
         }
       },
@@ -3218,12 +3220,12 @@
         "stock": {
           "field": "0",
           "value": "stock amt",
-          "optional": true
+          "if empty": 0
         },
         "sales": {
           "field": "0",
           "value": "sale amt",
-          "optional": true
+          "if empty": 0
         }
       }
     }
