@@ -101,6 +101,9 @@
     },
     "D491D1180": {
       "combine": false
+    },
+    "D491D835": {
+      "combine": true
     }
   },
   "D614": [
@@ -3157,6 +3160,68 @@
           "field": "0",
           "value": "sale amt",
           "if empty": 0
+        }
+      }
+    }
+  ],
+  "D491D835": [
+    {
+      "type": "both",
+      "sheet": 1,
+      "start column": "A",
+      "start row": "2",
+      "used range": true,
+      "rows config": {
+        "0": {
+          "required": true,
+          "output": true
+        }
+      },
+      "rows": {
+        "0": {
+          "part no": {
+            "column": "A",
+            "format": "text"
+          },
+          "brand": {
+            "column": "B",
+            "format": "text"
+          },
+          "sale amt": {
+            "column": "D",
+            "format": "number"
+          },
+          "stock amt": {
+            "column": "E",
+            "format": "number"
+          }
+        }
+      },
+      "output fields": {
+        "account_no": {
+          "value": "D491D835"
+        },
+        "date": {
+          "lookup": {
+            "type": "input",
+            "input": "Date"
+          }
+        },
+        "brand": {
+          "field": "0",
+          "value": "brand"
+        },
+        "part": {
+          "field": "0",
+          "value": "part no"
+        },
+        "stock": {
+          "field": "0",
+          "value": "stock amt"
+        },
+        "sales": {
+          "field": "0",
+          "value": "sale amt"
         }
       }
     }
