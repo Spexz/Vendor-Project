@@ -216,9 +216,6 @@
         "0": {
           "required": true,
           "output": true
-        },
-        "1": {
-          "required": true
         }
       },
       "rows": {
@@ -251,29 +248,6 @@
             },
             "format": "number"
           }
-        },
-        "1": {
-          "date 1": {
-            "find": {
-              "row": "A5:J7",
-              "value": "Ngày ghi sổ"
-            },
-            "format": "date"
-          },
-          "date 2": {
-            "find": {
-              "row": "A5:J7",
-              "value": "Ngày"
-            },
-            "format": "date"
-          },
-          "some no": {
-            "find": {
-              "row": "A5:J7",
-              "value": "Số"
-            },
-            "format": ["text", "number"]
-          }
         }
       },
       "output fields": {
@@ -281,9 +255,13 @@
           "value": "D614"
         },
         "date": {
-          "field": "1",
-          "value": "date 1",
-          "use eomonth": false
+          "lookup": {
+            "type": "regex",
+            "param": "[0-9]{1,2}/[0-9]{1,2}/[0-9]{2,4}",
+            "match": "cell",
+            "range": "A4"
+          },
+          "date format": "dd/mm/yyyy"
         },
         "brand": {
           "field": "0",
