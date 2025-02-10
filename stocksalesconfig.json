@@ -284,7 +284,7 @@
       "sheet": "STOCK LIST",
       "start row": "2",
       "start column": "A",
-      "end column": "D",
+      "end column": "C",
       "rows config": {
         "0": {
           "required": true,
