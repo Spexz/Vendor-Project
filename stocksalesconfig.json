@@ -283,7 +283,7 @@
       "type": "both",
       "sheet": "STOCK LIST",
       "start row": "2",
-      "start column": "B",
+      "start column": "A",
       "end column": "D",
       "rows config": {
         "0": {
@@ -294,11 +294,11 @@
       "rows": {
         "0": {
           "code": {
-            "column": "B",
+            "column": "A",
             "format": "text"
           },
           "part no": {
-            "column": "C",
+            "column": "B",
             "format": "text",
             "offset": 1,
             "lookup": {
@@ -308,19 +308,19 @@
             }
           },
           "description": {
-            "column": "C",
+            "column": "B",
             "format": "text"
           },
           "stock amt": {
-            "column": "D",
+            "column": "C",
             "format": "number"
           },
           "sale amt": {
             "lookup": {
               "type": "sumif",
-              "range": "B:B",
-              "criteria": "B",
-              "sum_range": "D:D",
+              "range": "A:A",
+              "criteria": "A",
+              "sum_range": "C:C",
               "target_sheet": "STOCK REPORT"
             },
             "format": "number"
