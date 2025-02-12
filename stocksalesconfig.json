@@ -847,10 +847,10 @@
       "sheet": 1,
       "start row": "2",
       "end row": {
-        "column": "C"
+        "column": "D"
       },
       "start column": "A",
-      "end column": "C",
+      "end column": "D",
       "rows config": {
         "0": {
           "required": true,
@@ -864,11 +864,11 @@
             "format": "text"
           },
           "stock amt": {
-            "column": "D",
+            "column": "C",
             "format": "number"
           },
           "sale amt": {
-            "column": "E",
+            "column": "D",
             "format": "number"
           }
         }
