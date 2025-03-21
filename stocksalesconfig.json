@@ -1194,7 +1194,7 @@
       "type": "both",
       "sheet": 1,
       "start column": "A",
-      "start row": "3",
+      "start row": "2",
       "used range": true,
       "rows config": {
         "0": {
@@ -1223,6 +1223,8 @@
               "NIBK ": "",
               "SB_": "",
               "SB ": "",
+              "FIT_": "",
+              "FIT ": "",
               "_": "",
               " ": ""
             }
