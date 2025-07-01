@@ -1924,7 +1924,8 @@
               "row": "1:1",
               "value": "STOCK"
             },
-            "format": "number"
+            "format": "number",
+            "optional": true
           },
           "sale amt": {
             "find": {
