@@ -3488,7 +3488,11 @@
         "0": {
           "part no": {
             "column": "A",
-            "format": "text"
+            "format": "text",
+            "replace": {
+              "-JIKIU": "",
+              "-": ""
+            }
           },
           "stock amt": {
             "column": "B",
