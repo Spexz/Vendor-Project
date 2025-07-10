@@ -3513,7 +3513,7 @@
           }
         },
         "brand": {
-          "field": ""
+          "value": ""
         },
         "part": {
           "field": "0",
