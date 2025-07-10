@@ -107,6 +107,9 @@
     },
     "D491D835": {
       "combine": true
+    },
+    "D393": {
+      "combine": false
     }
   },
   "D614": [
@@ -3450,6 +3453,67 @@
         "brand": {
           "field": "0",
           "value": "brand"
+        },
+        "part": {
+          "field": "0",
+          "value": "part no"
+        },
+        "stock": {
+          "field": "0",
+          "value": "stock amt",
+          "if empty": 0
+        },
+        "sales": {
+          "field": "0",
+          "value": "sale amt",
+          "if empty": 0
+        }
+      }
+    }
+  ],
+  "D393": [
+    {
+      "type": "both",
+      "sheet": 1,
+      "start column": "A",
+      "start row": "2",
+      "used range": true,
+      "rows config": {
+        "0": {
+          "required": true,
+          "output": true
+        }
+      },
+      "rows": {
+        "0": {
+          "part no": {
+            "column": "A",
+            "format": "text"
+          },
+          "stock amt": {
+            "column": "B",
+            "format": "number",
+            "optional": true
+          },
+          "sale amt": {
+            "column": "D",
+            "format": "number",
+            "optional": true
+          }
+        }
+      },
+      "output fields": {
+        "account_no": {
+          "value": "D393"
+        },
+        "date": {
+          "lookup": {
+            "type": "extract month",
+            "from": "filename"
+          }
+        },
+        "brand": {
+          "field": ""
         },
         "part": {
           "field": "0",
