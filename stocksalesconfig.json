@@ -1614,9 +1614,11 @@
           "value": "D1161"
         },
         "date": {
+          "value": "0",
           "lookup": {
-            "type": "input",
-            "input": "Date"
+            "type": "regex",
+            "param": "[a-zA-Z]{3,}\\s+[0-9]{4}",
+            "match": "filename"
           }
         },
         "brand": {
