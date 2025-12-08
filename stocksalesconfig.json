@@ -1431,7 +1431,8 @@
             "value if contains": {
               "JS_NIBK": "NiBK",
               "JS_SB": "SB",
-              "JS_": "JS"
+              "JS_": "JS",
+              "NIBK": "NIBK"
             }
           },
           "part no": {
@@ -1509,7 +1510,8 @@
             "value if contains": {
               "JS_NIBK": "NiBK",
               "JS_SB": "SB",
-              "JS_": "JS"
+              "JS_": "JS",
+              "NIBK": "NIBK"
             }
           },
           "part no": {
