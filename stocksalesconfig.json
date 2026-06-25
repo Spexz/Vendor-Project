@@ -110,6 +110,9 @@
     },
     "D393": {
       "combine": false
+    },
+    "D1256": {
+      "combine": false
     }
   },
   "D614": [
@@ -3666,6 +3669,110 @@
           "field": "0",
           "value": "sale amt",
           "if empty": 0
+        }
+      }
+    }
+  ],
+  "D1256": [
+    {
+      "type": "stock",
+      "sheet": 1,
+      "start column": "A",
+      "start row": "2",
+      "used range": true,
+      "rows config": {
+        "0": {
+          "required": true,
+          "output": true
+        }
+      },
+      "match": {
+        "type": "filename contains",
+        "param": "STOCK"
+      },
+      "rows": {
+        "0": {
+          "part no": {
+            "column": "A",
+            "format": "text"
+          },
+          "stock amt": {
+            "column": "C",
+            "format": "number"
+          }
+        }
+      },
+      "output fields": {
+        "account_no": {
+          "value": "D1256"
+        },
+        "date": {
+          "lookup": {
+            "type": "extract month",
+            "from": "filename"
+          }
+        },
+        "brand": {
+          "value": ""
+        },
+        "part": {
+          "field": "0",
+          "value": "part no"
+        },
+        "stock": {
+          "field": "0",
+          "value": "stock amt"
+        }
+      }
+    },
+    {
+      "type": "sales",
+      "sheet": 1,
+      "start column": "A",
+      "start row": "2",
+      "used range": true,
+      "rows config": {
+        "0": {
+          "required": true,
+          "output": true
+        }
+      },
+      "match": {
+        "type": "filename contains",
+        "param": "SALES"
+      },
+      "rows": {
+        "0": {
+          "part no": {
+            "column": "A",
+            "format": "text"
+          },
+          "sale amt": {
+            "column": "C",
+            "format": "number"
+          }
+        }
+      },
+      "output fields": {
+        "account_no": {
+          "value": "D1256"
+        },
+        "date": {
+          "lookup": {
+            "type": "extract month",
+            "from": "filename"
+          }
+        },
+        "brand": {
+          "value": ""
+        },
+        "part": {
+          "field": "0",
+          "value": "part no"
+        },
+        "sales": {
+          "field": "0",
+          "value": "sale amt"
         }
       }
     }
