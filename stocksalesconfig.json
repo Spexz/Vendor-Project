@@ -3675,7 +3675,7 @@
   ],
   "D1256": [
     {
-      "type": "both",
+      "type": "stock",
       "sheet": 1,
       "start column": "A",
       "start row": "2",
@@ -3730,7 +3730,7 @@
       }
     },
     {
-      "type": "both",
+      "type": "sales",
       "sheet": 1,
       "start column": "A",
       "start row": "2",
