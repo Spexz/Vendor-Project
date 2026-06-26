@@ -3720,13 +3720,9 @@
           "value": "part no"
         },
         "stock": {
-        "field": "0",
-        "value": "stock amt"
-      },
-      "sales": {
-        "field": "0",
-        "value": "sale amt"
-      }
+          "field": "0",
+          "value": "stock amt"
+        }
       }
     },
     {
@@ -3774,14 +3770,10 @@
           "field": "0",
           "value": "part no"
         },
-        "stock": {
-        "field": "0",
-        "value": "stock amt"
-      },
-      "sales": {
-        "field": "0",
-        "value": "sale amt"
-      }
+        "sales": {
+          "field": "0",
+          "value": "sale amt"
+        }
       }
     }
   ]
